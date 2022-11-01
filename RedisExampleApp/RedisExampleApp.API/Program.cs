@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RedisExampleApp.API.Models;
 using RedisExampleApp.API.Repositories;
+using RedisExampleApp.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,13 +17,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseInMemoryDatabase("MyDatabase");
 });
-
+builder.Services.AddSingleton<RedisService>(sp =>
+{
+    return new RedisService(builder.Configuration["CacheOptions:Url"]);
+});
 var app = builder.Build();
 
 //In-Memory database i ayaða kaldýrmak için seed datayý göstermek için ekledik.
 using (var scope = app.Services.CreateScope())
 {
-    var dbContext=scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     dbContext.Database.EnsureCreated();
 }
 

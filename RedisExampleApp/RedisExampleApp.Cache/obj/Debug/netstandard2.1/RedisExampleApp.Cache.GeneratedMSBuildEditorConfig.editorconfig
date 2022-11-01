@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = RedisExampleApp.Cache
+build_property.ProjectDir = D:\DEVELOPMENT\Udemy\Redis-.NET-7-Project\RedisExampleApp\RedisExampleApp.Cache\

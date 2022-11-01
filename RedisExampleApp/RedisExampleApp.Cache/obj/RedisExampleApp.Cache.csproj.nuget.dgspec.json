@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\DEVELOPMENT\\Udemy\\Redis-.NET-7-Project\\RedisExampleApp\\RedisExampleApp.Cache\\RedisExampleApp.Cache.csproj": {}
+  },
+  "projects": {
+    "D:\\DEVELOPMENT\\Udemy\\Redis-.NET-7-Project\\RedisExampleApp\\RedisExampleApp.Cache\\RedisExampleApp.Cache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DEVELOPMENT\\Udemy\\Redis-.NET-7-Project\\RedisExampleApp\\RedisExampleApp.Cache\\RedisExampleApp.Cache.csproj",
+        "projectName": "RedisExampleApp.Cache",
+        "projectPath": "D:\\DEVELOPMENT\\Udemy\\Redis-.NET-7-Project\\RedisExampleApp\\RedisExampleApp.Cache\\RedisExampleApp.Cache.csproj",
+        "packagesPath": "C:\\Users\\yucel\\.nuget\\packages\\",
+        "outputPath": "D:\\DEVELOPMENT\\Udemy\\Redis-.NET-7-Project\\RedisExampleApp\\RedisExampleApp.Cache\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yucel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

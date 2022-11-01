@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RedisExampleApp.API.Models;
 using RedisExampleApp.API.Repositories;
+using RedisExampleApp.Cache;
 
 namespace RedisExampleApp.API.Controllers
 {
