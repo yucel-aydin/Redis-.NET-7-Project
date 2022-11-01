@@ -8,20 +8,20 @@ namespace RedisExampleApp.API.Models
         {
 
         }
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Products>().HasData(
+            modelBuilder.Entity<Product>().HasData(
 
-                new Products()
+                new Product()
                 {
                     Id = 1,
                     Name = "Kitap 1",
                     Price = 10
                 },
 
-                new Products()
+                new Product()
                 {
                     Id = 2,
                     Name = "Kitap 2",
@@ -29,7 +29,7 @@ namespace RedisExampleApp.API.Models
                 },
 
 
-                new Products()
+                new Product()
                 {
                     Id = 3,
                     Name = "Kitap 3",
